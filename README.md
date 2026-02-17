@@ -1,0 +1,130 @@
+# AI Business Analytics Assistant
+
+An AI-powered analytics assistant that lets users explore business data using natural language.
+# 🚀 AI Data Copilot — Conversational Analytics Assistant
+
+An AI-powered analytics tool that allows users to explore datasets using natural language.
+
+The system understands informal queries, detects user intent, performs analysis, and generates visualizations — all grounded in the uploaded dataset.
+
+---
+
+## 🧠 Pipeline Architecture
+
++----------------------+
+|      User Query      |
+| (Natural Language)   |
++----------+-----------+
+           |
+           v
++----------------------+
+|   Intent Detection   |
+|  (Rules + LLM Lite)  |
++----------+-----------+
+           |
+           v
++----------------------+
+|  Entity Extraction   |
+| (Years, Metrics etc) |
++----------+-----------+
+           |
+           v
++----------------------+
+|     Query Planner    |
+| Decide analysis type |
++----------+-----------+
+           |
+           v
++----------------------+
+|      Data Engine     |
+|   Pandas / SQL       |
++----------+-----------+
+           |
+           v
++----------------------+
+| Visualization Engine |
+|   Plotly Charts      |
++----------+-----------+
+           |
+           v
++----------------------+
+|  LLM Explanation     |
+| (Insights / Summary) |
++----------+-----------+
+           |
+           v
++----------------------+
+|  Streamlit Dashboard |
+|  Interactive Output  |
++----------------------+
+
+The system processes natural language queries by first detecting intent and extracting relevant entities such as time periods or metrics. It then plans the analysis, executes data operations using Pandas or SQL, generates visualizations, and optionally provides AI-driven explanations — all delivered through an interactive dashboard.
+
+
+---
+
+## ⚙️ Key Features
+
+- Conversational query interface
+- Informal prompt understanding
+- Year vs year comparison
+- Trend analysis
+- Dynamic chart generation
+- Chart type selection
+- Dataset uploader (works with any CSV / Excel)
+- Fast response optimization
+- Interactive dashboard
+- Grounded responses using dataset only
+
+---
+
+## 🛠 Tech Stack
+
+- Python
+- Streamlit
+- Pandas
+- Plotly
+- LangChain
+- Ollama (local LLM)
+- Regex-based entity detection
+
+---
+
+## 🧩 System Components
+
+dashboard.py → User interface + orchestration  
+sql_agent.py → Natural language to SQL execution  
+router.py → Query routing logic  
+forecasting.py → Predictive analysis  
+memory.py → Conversation context  
+dataset loader → Data ingestion  
+
+---
+
+## 📊 Example Queries
+
+- Compare 2017 vs 2018 sales
+- Show trend over time
+- What insights can you give?
+- Total revenue
+- Plot performance
+- Explain results
+
+---
+
+## 🎯 Project Goal
+
+To demonstrate how LLMs can be integrated with data pipelines to build an intelligent analytics assistant capable of interpreting natural language and supporting decision-making.
+
+---
+
+## 🚀 Future Improvements
+
+- Advanced anomaly detection
+- RAG-based knowledge grounding
+- Multi-agent planning
+- Cloud deployment
+- Real-time streaming data
+
+---
+
