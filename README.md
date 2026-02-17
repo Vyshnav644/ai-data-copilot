@@ -8,6 +8,10 @@ An AI-powered analytics tool that allows users to explore datasets using natural
 The system understands informal queries, detects user intent, performs analysis, and generates visualizations — all grounded in the uploaded dataset.
 
 ---
+## 🌐 Live Demo
+
+Try it here:
+https://ai-data-copilot-ekzttqfh7wmrqe9xdbgqgf.streamlit.app
 
 ## 🧠 Pipeline Architecture
 
@@ -127,4 +131,5 @@ To demonstrate how LLMs can be integrated with data pipelines to build an intell
 - Real-time streaming data
 
 ---
+
 
