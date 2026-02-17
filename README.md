@@ -15,52 +15,22 @@ https://ai-data-copilot-ekzttqfh7wmrqe9xdbgqgf.streamlit.app
 
 ## 🧠 Pipeline Architecture
 
-+----------------------+
-|      User Query      |
-| (Natural Language)   |
-+----------+-----------+
-           |
-           v
-+----------------------+
-|   Intent Detection   |
-|  (Rules + LLM Lite)  |
-+----------+-----------+
-           |
-           v
-+----------------------+
-|  Entity Extraction   |
-| (Years, Metrics etc) |
-+----------+-----------+
-           |
-           v
-+----------------------+
-|     Query Planner    |
-| Decide analysis type |
-+----------+-----------+
-           |
-           v
-+----------------------+
-|      Data Engine     |
-|   Pandas / SQL       |
-+----------+-----------+
-           |
-           v
-+----------------------+
-| Visualization Engine |
-|   Plotly Charts      |
-+----------+-----------+
-           |
-           v
-+----------------------+
-|  LLM Explanation     |
-| (Insights / Summary) |
-+----------+-----------+
-           |
-           v
-+----------------------+
-|  Streamlit Dashboard |
-|  Interactive Output  |
-+----------------------+
+User Query (Natural Language)
+        ↓
+Intent Detection (Rules + Lightweight LLM)
+        ↓
+Entity Extraction (Years, Metrics, Categories)
+        ↓
+Query Planner (Determine Analysis Type)
+        ↓
+Data Engine (Pandas / SQL)
+        ↓
+Visualization Engine (Plotly)
+        ↓
+Optional LLM Insight Generator
+        ↓
+Streamlit Dashboard (Interactive Output)
+
 
 The system processes natural language queries by first detecting intent and extracting relevant entities such as time periods or metrics. It then plans the analysis, executes data operations using Pandas or SQL, generates visualizations, and optionally provides AI-driven explanations — all delivered through an interactive dashboard.
 
@@ -131,5 +101,6 @@ To demonstrate how LLMs can be integrated with data pipelines to build an intell
 - Real-time streaming data
 
 ---
+
 
 
